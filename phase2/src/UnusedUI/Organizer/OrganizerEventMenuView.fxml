@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="427.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UnusedGUIPresenters.Organizer.OrganizerEventMenuPresenter">
+   <Label layoutX="14.0" layoutY="6.0" text="Signed in as:" />
+   <Label fx:id="username" layoutX="90.0" layoutY="6.0" text="Username" />
+   <Label layoutX="14.0" layoutY="23.0" text="Organizer Event Menu">
+      <font>
+         <Font size="22.0" />
+      </font>
+   </Label>
+   <ListView fx:id="displayListView" layoutX="17.0" layoutY="71.0" prefHeight="202.0" prefWidth="200.0" />
+   <Button layoutX="424.0" layoutY="221.0" mnemonicParsing="false" onAction="#createRoom" text="Create Room" />
+   <TextField fx:id="roomIdField" layoutX="424.0" layoutY="87.0" promptText="Room ID" />
+   <TextField fx:id="capacityField" layoutX="505.0" layoutY="124.0" prefHeight="27.0" prefWidth="80.0" promptText="Capacity" />
+   <TextField fx:id="socketField" layoutX="424.0" layoutY="124.0" prefHeight="27.0" prefWidth="80.0" promptText="Sockets" />
+   <CheckBox fx:id="yesProjector" layoutX="424.0" layoutY="160.0" mnemonicParsing="false" text="Projector">
+      <font>
+         <Font size="12.0" />
+      </font>
+   </CheckBox>
+   <CheckBox fx:id="yesAudioSystem" layoutX="424.0" layoutY="189.0" mnemonicParsing="false" text="Audio System">
+      <font>
+         <Font size="12.0" />
+      </font>
+   </CheckBox>
+   <ListView fx:id="detailList" layoutX="229.0" layoutY="275.0" prefHeight="114.0" prefWidth="161.0" />
+   <TextField fx:id="eventNameDisplay" editable="false" layoutX="229.0" layoutY="87.0" prefHeight="27.0" prefWidth="125.0" />
+   <Label layoutX="251.0" layoutY="71.0" text="Selected Event Name" />
+   <Label fx:id="displayTag" layoutX="17.0" layoutY="55.0" text="Events" />
+   <Button fx:id="changeSpeakerButton" disable="true" layoutX="314.0" layoutY="124.0" mnemonicParsing="false" onAction="#changeSpeaker" text="Change Speaker" />
+   <Button fx:id="changeTimeButton" disable="true" layoutX="221.0" layoutY="124.0" mnemonicParsing="false" onAction="#changeTime" text="Change Time" />
+   <Button fx:id="signUpButton" disable="true" layoutX="229.0" layoutY="197.0" mnemonicParsing="false" onAction="#signUp" text="Sign Up" />
+   <Button fx:id="cancelSpotButton" disable="true" layoutX="293.0" layoutY="197.0" mnemonicParsing="false" onAction="#cancelSpot" prefHeight="27.0" prefWidth="91.0" text="Cancel Spot" />
+   <Button fx:id="removeEvent" disable="true" layoutX="353.0" layoutY="87.0" mnemonicParsing="false" onAction="#removeEvent" prefHeight="27.0" prefWidth="57.0" text="Clear" />
+   <Button fx:id="seeAllEventsButton" layoutX="400.0" layoutY="298.0" mnemonicParsing="false" onAction="#seeAllEvents" text="See all events" />
+   <Button fx:id="seeAttendedEventsButton" layoutX="400.0" layoutY="330.0" mnemonicParsing="false" onAction="#seeAttending" text="See events attending" />
+   <Button fx:id="seeUnattendedEventsButton" layoutX="400.0" layoutY="362.0" mnemonicParsing="false" onAction="#seeNotAttending" text="See events not attending" />
+   <TextField fx:id="searchSpeakerField" layoutX="17.0" layoutY="285.0" promptText="Speaker" />
+   <CheckBox fx:id="yesSpeaker" layoutX="181.0" layoutY="289.0" mnemonicParsing="false" />
+   <CheckBox fx:id="yesTime" layoutX="181.0" layoutY="322.0" mnemonicParsing="false" />
+   <CheckBox fx:id="yesDuration" layoutX="181.0" layoutY="354.0" mnemonicParsing="false" />
+   <Button fx:id="searchWithParametersButton" layoutX="12.0" layoutY="380.0" mnemonicParsing="false" onAction="#searchViaParameters" text="Search for event with selected parameters">
+      <font>
+         <Font size="11.0" />
+      </font>
+   </Button>
+   <ChoiceBox fx:id="startTimeChoice" layoutX="23.0" layoutY="317.0" prefWidth="150.0" />
+   <ChoiceBox fx:id="durationChoice" layoutX="23.0" layoutY="349.0" prefWidth="150.0" />
+   <Button fx:id="seeSpeakers" disable="true" layoutX="229.0" layoutY="236.0" mnemonicParsing="false" onAction="#seeSpeakers" text="See Speakers" />
+   <TextField fx:id="timeField" layoutX="269.0" layoutY="158.0" prefHeight="28.0" prefWidth="91.0" />
+   <Button fx:id="backButton" layoutX="449.0" layoutY="18.0" mnemonicParsing="false" opacity="0.75" text="Go Back" />
+   <Button fx:id="signOutButton" layoutX="520.0" layoutY="18.0" mnemonicParsing="false" opacity="0.75" text="Sign Out" />
+</AnchorPane>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UnusedGUIPresenters.Speaker.SpeakerEventMenuPresenter">
+    <children>
+        <Label fx:id="welcome" layoutX="274.0" layoutY="49.0" textAlignment="CENTER" />
+
+      <ListView fx:id="eventlist" layoutX="3.0" layoutY="2.0" prefHeight="305.0" prefWidth="460.0" />
+      <VBox fx:id="layout" layoutX="3.0" layoutY="4.0" prefHeight="305.0" prefWidth="460.0" />
+        <Button fx:id="goBack" layoutX="502.0" layoutY="117.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="Back" />
+        <Button fx:id="signOut" layoutX="502.0" layoutY="85.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="71.0" text="Sign Out" />
+        
+        
+    </children>
+
+</AnchorPane>

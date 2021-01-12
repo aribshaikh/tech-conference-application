@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="UnusedGUIPresenters.Organizer.OrganizerConferenceMenuPresenter">
+   <Label layoutX="14.0" layoutY="35.0" text="Organizer Conference Controls">
+      <font>
+         <Font size="22.0" />
+      </font>
+   </Label>
+   <Label layoutX="14.0" layoutY="14.0" text="Signed in as:" />
+   <Label layoutX="90.0" layoutY="14.0" text="Username" />
+   <MenuButton layoutX="14.0" layoutY="63.0" mnemonicParsing="false" text="See all users of type:">
+      <items>
+         <MenuItem fx:id="attendeeOption" mnemonicParsing="false" onAction="#seeAttendees" text="Attendee" />
+         <MenuItem fx:id="organizerOption" mnemonicParsing="false" onAction="#seeOrganizers" text="Organizer" />
+         <MenuItem fx:id="speakerOption" mnemonicParsing="false" onAction="#seeSpeakers" text="Speaker" />
+         <MenuItem fx:id="adminOption" mnemonicParsing="false" onAction="#seeAdmin" text="Admin" />
+         <MenuItem fx:id="anyOption" mnemonicParsing="false" onAction="#seeAll" text="Any" />
+      </items>
+   </MenuButton>
+   <ListView fx:id="userList" layoutX="19.0" layoutY="100.0" onMouseClicked="#displayInfo" prefHeight="195.0" prefWidth="228.0" />
+   <Button fx:id="createUser" layoutX="283.0" layoutY="100.0" mnemonicParsing="false" text="Create a new user with entered information" />
+   <TextField fx:id="usernameField" layoutX="372.0" layoutY="132.0" />
+   <PasswordField fx:id="newPassword" layoutX="372.0" layoutY="172.0" />
+   <PasswordField fx:id="confirmNewPassword" layoutX="372.0" layoutY="210.0" />
+   <Label layoutX="303.0" layoutY="137.0" text="Username:" />
+   <Label layoutX="305.0" layoutY="177.0" text="Password:" />
+   <Label layoutX="258.0" layoutY="215.0" text="Confirm Password:" />
+   <Label layoutX="283.0" layoutY="250.0" text="Account Type:" />
+   <ChoiceBox fx:id="userTypeChoice" layoutX="378.0" layoutY="245.0" prefWidth="150.0" />
+   <TextField fx:id="selectedType" editable="false" layoutX="79.0" layoutY="349.0" prefHeight="27.0" prefWidth="79.0" />
+   <Label layoutX="14.0" layoutY="354.0" text="Type:" />
+   <Label layoutX="15.0" layoutY="318.0" text="Username:" />
+   <TextField fx:id="selectedUsername" editable="false" layoutX="78.0" layoutY="313.0" />
+   <Label disable="true" layoutX="291.0" layoutY="318.0" />
+   <ChoiceBox fx:id="timeChoices" disable="true" layoutX="213.0" layoutY="349.0" prefHeight="27.0" prefWidth="50.0" />
+   <Label fx:id="freeAt" disable="true" layoutX="162.0" layoutY="354.0" text="Free At:" />
+   <Label fx:id="duration" disable="true" layoutX="275.0" layoutY="354.0" text="Duration:" />
+   <ChoiceBox fx:id="durationChoice" disable="true" layoutX="333.0" layoutY="349.0" prefHeight="27.0" prefWidth="50.0" />
+   <TextField fx:id="displayFree" disable="true" editable="false" layoutX="394.0" layoutY="349.0" prefHeight="27.0" prefWidth="43.0" />
+   <Button fx:id="backButton" layoutX="449.0" layoutY="18.0" mnemonicParsing="false" opacity="0.75" text="Go Back" />
+   <Button fx:id="signOutButton" layoutX="520.0" layoutY="18.0" mnemonicParsing="false" opacity="0.75" text="Sign Out" />
+</AnchorPane>
